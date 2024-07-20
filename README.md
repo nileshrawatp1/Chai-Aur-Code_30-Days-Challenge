@@ -1614,7 +1614,7 @@ By the end of these activities, students will:
 const name = "John";
 const age = 30;
 const message = `My name is ${name} and I am ${age} years old.`;
-console.log(message);
+console.log(message); // My name is John and I am 30 years old.
 ```
 
 **Explanation:**  
@@ -1627,6 +1627,10 @@ const multiLineString = `This is a string
 that spans across
 multiple lines.`;
 console.log(multiLineString);
+
+// This is a string
+// that spans across
+// multiple lines.
 ```
 
 **Explanation:**  
@@ -1639,7 +1643,7 @@ Template literals also support multi-line strings, which can be created by simpl
 ```javascript
 const numbers = [1, 2, 3, 4, 5];
 const [first, second] = numbers;
-console.log(first, second);
+console.log(first, second); // 1 2
 ```
 
 **Explanation:**  
@@ -1654,7 +1658,7 @@ const book = {
   year: 1949
 };
 const { title, author } = book;
-console.log(title, author);
+console.log(title, author); // 1984 George Orwell
 ```
 
 **Explanation:**  
@@ -1666,8 +1670,8 @@ Object destructuring allows you to unpack properties from objects into distinct 
 
 ```javascript
 const oldArray = [1, 2, 3];
-const newArray = [...oldArray, 4, 5, 6];
-console.log(newArray);
+const newArray = [...oldArray, 4, 5, 6]; 
+console.log(newArray);  // [1, 2, 3, 4, 5, 6]
 ```
 
 **Explanation:**  
@@ -1679,7 +1683,7 @@ The spread operator (`...`) allows you to expand an array into individual elemen
 function sum(...numbers) {
   return numbers.reduce((acc, curr) => acc + curr, 0);
 }
-console.log(sum(1, 2, 3, 4, 5));
+console.log(sum(1, 2, 3, 4, 5)); // 15
 ```
 
 **Explanation:**  
@@ -1733,7 +1737,7 @@ const obj = {
   [propName]: value
 };
 
-console.log(obj);
+console.log(obj); // { dynamicProperty: 'This is a dynamic value' }
 ```
 
 **Explanation:**  
@@ -1752,6 +1756,11 @@ console.log(greeting);
 const multiLine = `This is a multi-line
 string using template literals.`;
 console.log(multiLine);
+
+// Hello, my name is Alice and I am 25 years old.
+// This is a multi-line
+// string using template literals.
+
 ```
 
 ### 2. Destructuring Script
@@ -1759,7 +1768,7 @@ console.log(multiLine);
 ```javascript
 const array = [10, 20, 30];
 const [firstElement, secondElement] = array;
-console.log(firstElement, secondElement);
+console.log(firstElement, secondElement); // 10 20
 
 const car = {
   make: "Toyota",
@@ -1767,7 +1776,7 @@ const car = {
   year: 2020
 };
 const { make, model } = car;
-console.log(make, model);
+console.log(make, model); // Toyota Corolla
 ```
 
 ### 3. Spread and Rest Operators Script
@@ -1776,12 +1785,12 @@ console.log(make, model);
 const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
 const combinedArray = [...arr1, ...arr2];
-console.log(combinedArray);
+console.log(combinedArray); // [1, 2, 3, 4, 5, 6]
 
 function sumAll(...args) {
   return args.reduce((sum, current) => sum + current, 0);
 }
-console.log(sumAll(1, 2, 3, 4, 5));
+console.log(sumAll(1, 2, 3, 4, 5)); // 15
 ```
 
 ### 4. Default Parameters Script
@@ -1807,8 +1816,8 @@ const dynamicObject = {
   }
 };
 
-console.log(dynamicObject);
-dynamicObject.method();
+console.log(dynamicObject); // { dynamicKey: 'dynamicValue', method: [Function: method] }
+dynamicObject.method(); //This is a method inside an object.
 ```
 
 ## Achievement
