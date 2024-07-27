@@ -15,7 +15,7 @@
 
 **Task 1: Create a module that exports a function to add two numbers. Import and use this module in another script.**
 
-**math.js**
+**math.mjs**
 
 ```javascript
 export function add(a, b) {
@@ -23,22 +23,22 @@ export function add(a, b) {
 }
 ```
 
-**index.js**
+**index.mjs**
 
 ```javascript
-import { add } from "./math.js";
+import { add } from "./math.mjs";
 
 console.log(add(2, 3)); // Output: 5
 ```
 
 **Explanation:**
 
-- We create a module named `math.js` that exports an `add` function.
-- In `index.js`, we import the `add` function from `math.js` and use it to add two numbers.
+- We create a module named `math.mjs` that exports an `add` function.
+- In `index.mjs`, we import the `add` function from `math.mjs` and use it to add two numbers.
 
 **Task 2: Create a module that exports an object representing a person with properties and methods. Import and use this module in another script.**
 
-**person.js**
+**person.mjs**
 
 ```javascript
 export const person = {
@@ -50,24 +50,24 @@ export const person = {
 };
 ```
 
-**index.js**
+**index.mjs**
 
 ```javascript
-import { person } from "./person.js";
+import { person } from "./person.mjs";
 
 console.log(person.getFullName()); // Output: John Doe
 ```
 
 **Explanation:**
 
-- We create a module named `person.js` that exports an object representing a person with properties and methods.
-- In `index.js`, we import the `person` object from `person.js` and use its methods.
+- We create a module named `person.mjs` that exports an object representing a person with properties and methods.
+- In `index.mjs`, we import the `person` object from `person.mjs` and use its methods.
 
 ### Activity 2: Named and Default Exports
 
 **Task 3: Create a module that exports multiple functions using named exports. Import and use these functions in another script.**
 
-**utils.js**
+**utils.mjs**
 
 ```javascript
 export function greet(name) {
